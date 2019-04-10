@@ -4,15 +4,20 @@ High quality, high speed shell script for converting and creating files for use
 in video editing software.
 
 - Losslessly converts video files to the .mkv container for compatibility with
-  video editing software.
+  video editing software
 
-- Additionally creates lower resolution proxy files to use for editing to save
-  CPU for replacement on final render.
+- Optionally creates lower resolution proxy files for editing to save CPU (for
+  replacement on final render)
 
 Some video editing software does not like certain file formats (like .MTS), and
 often you need to create much lower resolution versions of your source video to
-be able to edit without the CPU overloading. Some software automatically
-generates these 'proxy' files, and others, like Reaper, does not.
+be able to edit without the CPU overloading.
+
+If your software does not support making proxy files then you need to create
+them yourself and manually replace them for the final render. The new version of
+Blender 2.8 will do this for you automatically
+https://www.youtube.com/watch?v=NRhTiFAHL1k, but you might not be lucky enough
+to be using that :)
 
 Tested for use in [Reaper](https://www.reaper.fm/) using FFmpeg as video
 decoder.
@@ -23,6 +28,10 @@ Requires [FFmpeg ](https://ffmpeg.org/) installed and available on the command
 line.
 
 ## Usage
+
+Download the script to a folder in your PATH so you can run it, and make it
+executable:
+[direct link to script copy/paste](https://raw.githubusercontent.com/David-Else/cpv-convert-and-proxy-video/master/cpv)
 
 ```
 cpv.sh [options] [filename]
