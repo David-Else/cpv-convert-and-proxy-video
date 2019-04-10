@@ -31,10 +31,10 @@ line.
 
 Download the script to a folder in your PATH so you can run it, and make it
 executable:
-[direct link to script copy/paste](https://raw.githubusercontent.com/David-Else/cpv-convert-and-proxy-video/master/cpv)
+[direct link to script to copy/paste](https://raw.githubusercontent.com/David-Else/cpv-convert-and-proxy-video/master/cpv)
 
 ```
-cpv.sh [options] [filename]
+cpv [options] [filename]
 
 Optional arguments:
 
